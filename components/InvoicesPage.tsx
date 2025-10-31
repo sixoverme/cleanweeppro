@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext.tsx';
-import { Invoice, InvoiceStatus, AppointmentStatus } from '../types.ts';
+import { useAppContext } from '../context/AppContext';
+import { Invoice, InvoiceStatus, AppointmentStatus } from '../types';
 
 const getStatusColor = (status: InvoiceStatus) => {
     switch (status) {

@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import { useAppContext } from '../context/AppContext.tsx';
-import { Appointment, AppointmentStatus } from '../types.ts';
-import { ChevronLeftIcon, ChevronRightIcon } from './Icons.tsx';
+import { useAppContext } from '../context/AppContext';
+import { Appointment, AppointmentStatus } from '../types';
+import { ChevronLeftIcon, ChevronRightIcon } from './Icons';
 
 interface AppointmentCalendarProps {
     onAppointmentClick: (appointment: Appointment) => void;

@@ -1,13 +1,11 @@
 
 import React, { useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext.tsx';
-import { ChevronLeftIcon, DocumentDownloadIcon } from './Icons.tsx';
-import { InvoiceStatus, BillingType } from '../types.ts';
-
-// These would be globals from the script tags in index.html
-declare const jspdf: any;
-declare const html2canvas: any;
+import { useAppContext } from '../context/AppContext';
+import { ChevronLeftIcon, DocumentDownloadIcon } from './Icons';
+import { InvoiceStatus, BillingType } from '../types';
+import { jsPDF } from 'jspdf';
+import html2canvas from 'html2canvas';
 
 const InvoiceDetailPage: React.FC = () => {
     const { invoiceId } = useParams<{ invoiceId: string }>();
@@ -36,9 +34,9 @@ const InvoiceDetailPage: React.FC = () => {
     const handleDownloadPdf = () => {
         const input = invoiceRef.current;
         if (input) {
-            html2canvas(input, { scale: 2 }).then((canvas: any) => {
+            html2canvas(input, { scale: 2 }).then((canvas) => {
                 const imgData = canvas.toDataURL('image/png');
-                const pdf = new jspdf.jsPDF({
+                const pdf = new jsPDF({
                     orientation: 'p',
                     unit: 'px',
                     format: 'a4',

@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { useAppContext } from '../context/AppContext.tsx';
-import { BusinessInfo } from '../types.ts';
+import { useAppContext } from '../context/AppContext';
+import { BusinessInfo } from '../types';
 
 interface BusinessInfoFormProps {
     onClose: () => void;

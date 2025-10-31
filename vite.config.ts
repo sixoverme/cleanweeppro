@@ -1,23 +1,35 @@
-import path from 'path';
-import { defineConfig, loadEnv } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { VitePWA } from 'vite-plugin-pwa'
 
-export default defineConfig(({ mode }) => {
-    const env = loadEnv(mode, '.', '');
-    return {
-      server: {
-        port: 3000,
-        host: '0.0.0.0',
+// https://vitejs.dev/config/
+export default defineConfig({
+  base: '/cleanweeppro/',
+  plugins: [
+    react(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      injectRegister: 'script',
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       },
-      plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
-      resolve: {
-        alias: {
-          '@': path.resolve(__dirname, '.'),
-        }
+      manifest: {
+        name: "CleanSweep Pro",
+        short_name: "CleanSweep",
+        description: "A comprehensive business management app for house cleaning professionals.",
+        theme_color: "#1E40AF",
+        background_color: "#f1f5f9",
+        display: "standalone",
+        start_url: ".",
+        icons: [
+          {
+            src: "icon.svg",
+            sizes: "192x192 512x512",
+            type: "image/svg+xml",
+            purpose: "any maskable"
+          }
+        ]
       }
-    };
-});
+    })
+  ],
+})

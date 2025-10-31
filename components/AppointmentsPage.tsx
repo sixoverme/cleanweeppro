@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
-import { useAppContext } from '../context/AppContext.tsx';
-import { Appointment, AppointmentStatus, BillingType, Location } from '../types.ts';
-import { PlusIcon, PencilIcon, TrashIcon, MapPinIcon, PhoneIcon, ListBulletIcon, CalendarDaysIcon } from './Icons.tsx';
-import AppointmentCalendar from './AppointmentCalendar.tsx';
+import { useAppContext } from '../context/AppContext';
+import { Appointment, AppointmentStatus, BillingType, Location } from '../types';
+import { PlusIcon, PencilIcon, TrashIcon, MapPinIcon, PhoneIcon, ListBulletIcon, CalendarDaysIcon } from './Icons';
+import AppointmentCalendar from './AppointmentCalendar';
 
 // Reusing Modal from CustomersPage concept - defining a generic one for use here.
 interface ModalProps {

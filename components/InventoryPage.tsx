@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext.tsx';
-import { InventoryItem } from '../types.ts';
-import { PlusIcon, PencilIcon, TrashIcon } from './Icons.tsx';
+import { useAppContext } from '../context/AppContext';
+import { InventoryItem } from '../types';
+import { PlusIcon, PencilIcon, TrashIcon } from './Icons';
 
 // Modal Component
 interface ModalProps {

@@ -1,8 +1,8 @@
 
 import React, { createContext, useContext, ReactNode } from 'react';
-import useLocalStorage from '../hooks/useLocalStorage.ts';
-import { Customer, Appointment, InventoryItem, Invoice, AppointmentStatus, InvoiceStatus, BillingType, BusinessInfo } from '../types.ts';
-import { MOCK_CUSTOMERS, MOCK_APPOINTMENTS, MOCK_INVENTORY, MOCK_INVOICES } from '../constants.tsx';
+import useLocalStorage from '../hooks/useLocalStorage';
+import { Customer, Appointment, InventoryItem, Invoice, AppointmentStatus, InvoiceStatus, BillingType, BusinessInfo } from '../types';
+import { MOCK_CUSTOMERS, MOCK_APPOINTMENTS, MOCK_INVENTORY, MOCK_INVOICES } from '../constants';
 
 interface AppContextType {
   customers: Customer[];

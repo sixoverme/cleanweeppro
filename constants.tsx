@@ -1,5 +1,5 @@
 
-import { Customer, Appointment, InventoryItem, Invoice, AppointmentStatus, InvoiceStatus, BillingType } from './types.ts';
+import { Customer, Appointment, InventoryItem, Invoice, AppointmentStatus, InvoiceStatus, BillingType } from './types';
 
 export const MOCK_CUSTOMERS: Customer[] = [
   { 

@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext.tsx';
-import { Customer, Contact, Location, Pet, Kid } from '../types.ts';
-import { PlusIcon, PencilIcon, TrashIcon, MapPinIcon, PhoneIcon } from './Icons.tsx';
+import { useAppContext } from '../context/AppContext';
+import { Customer, Contact, Location, Pet, Kid } from '../types';
+import { PlusIcon, PencilIcon, TrashIcon, MapPinIcon, PhoneIcon } from './Icons';
 
 // Modal Component
 interface ModalProps {
