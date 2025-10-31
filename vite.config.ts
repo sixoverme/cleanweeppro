@@ -10,6 +10,7 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: 'script',
+      includeAssets: ['icon.svg'],
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg}']
       },
