@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cleansweep-pro-cache-v2';
+const CACHE_NAME = 'cleansweep-pro-cache-v3';
 // These are the core files for the app shell
 const CORE_ASSETS = [
   './',
