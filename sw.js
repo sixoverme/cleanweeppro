@@ -1,11 +1,11 @@
 const CACHE_NAME = 'cleansweep-pro-cache-v1';
 // These are the core files for the app shell
 const CORE_ASSETS = [
-  '/',
-  '/index.html',
-  '/icon.svg',
-  '/manifest.json',
-  '/index.tsx'
+  './',
+  './index.html',
+  './icon.svg',
+  './manifest.json',
+  './index.tsx'
 ];
 
 self.addEventListener('install', (event) => {
