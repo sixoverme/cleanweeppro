@@ -1,0 +1,17 @@
+{
+  "name": "CleanSweep Pro",
+  "short_name": "CleanSweep",
+  "description": "A comprehensive business management app for house cleaning professionals. Manage customers, schedule appointments, track inventory, create invoices, and view a beautiful dashboard with key business insights.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f1f5f9",
+  "theme_color": "#1E40AF",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
