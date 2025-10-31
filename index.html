@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/cleanweeppro/assets/icon-BST9V46M.svg" type="image/svg+xml" />
-    <link rel="manifest" href="/cleanweeppro/assets/manifest-D0L-Isxe.json" />
+    <link rel="icon" href="/assets/icon-BST9V46M.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/assets/manifest-D0L-Isxe.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#1E40AF" />
     <title>CleanSweep Pro</title>
@@ -27,7 +27,11 @@
     <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
+</head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
   <script type="importmap">
 {
   "imports": {
@@ -39,10 +43,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/cleanweeppro/assets/index-Tjl4Hyzg.js"></script>
-</head>
-  <body class="bg-slate-50">
-    <div id="root"></div>
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
