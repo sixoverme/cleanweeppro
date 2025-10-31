@@ -1,15 +1,16 @@
+
 import React, { useState } from 'react';
 import { HashRouter, Routes, Route, NavLink } from 'react-router-dom';
-import Dashboard from './components/Dashboard';
-import CustomersPage from './components/CustomersPage';
-import CustomerDetailPage from './components/CustomerDetailPage';
-import AppointmentsPage from './components/AppointmentsPage';
-import InventoryPage from './components/InventoryPage';
-import InventoryDetailPage from './components/InventoryDetailPage';
-import InvoicesPage from './components/InvoicesPage';
-import InvoiceDetailPage from './components/InvoiceDetailPage';
-import BusinessInfoForm from './components/BusinessInfoForm';
-import { HomeIcon, UsersIcon, CalendarIcon, ArchiveBoxIcon, DocumentTextIcon, UserCircleIcon } from './components/Icons';
+import Dashboard from './components/Dashboard.tsx';
+import CustomersPage from './components/CustomersPage.tsx';
+import CustomerDetailPage from './components/CustomerDetailPage.tsx';
+import AppointmentsPage from './components/AppointmentsPage.tsx';
+import InventoryPage from './components/InventoryPage.tsx';
+import InventoryDetailPage from './components/InventoryDetailPage.tsx';
+import InvoicesPage from './components/InvoicesPage.tsx';
+import InvoiceDetailPage from './components/InvoiceDetailPage.tsx';
+import BusinessInfoForm from './components/BusinessInfoForm.tsx';
+import { HomeIcon, UsersIcon, CalendarIcon, ArchiveBoxIcon, DocumentTextIcon, UserCircleIcon } from './components/Icons.tsx';
 
 const navItems = [
   { path: '/', label: 'Dashboard', icon: HomeIcon },

@@ -1,7 +1,8 @@
+
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext';
-import { ChevronLeftIcon } from './Icons';
+import { useAppContext } from '../context/AppContext.tsx';
+import { ChevronLeftIcon } from './Icons.tsx';
 
 const DetailSection: React.FC<{title: string, children: React.ReactNode}> = ({ title, children }) => (
     <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-lg">

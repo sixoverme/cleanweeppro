@@ -1,8 +1,9 @@
+
 import React, { useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext';
-import { ChevronLeftIcon, DocumentDownloadIcon } from './Icons';
-import { InvoiceStatus, BillingType } from '../types';
+import { useAppContext } from '../context/AppContext.tsx';
+import { ChevronLeftIcon, DocumentDownloadIcon } from './Icons.tsx';
+import { InvoiceStatus, BillingType } from '../types.ts';
 
 // These would be globals from the script tags in index.html
 declare const jspdf: any;

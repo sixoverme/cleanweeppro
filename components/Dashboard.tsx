@@ -1,7 +1,8 @@
+
 import React from 'react';
-import { useAppContext } from '../context/AppContext';
-import { Appointment, AppointmentStatus, BillingType } from '../types';
-import { CalendarIcon, UsersIcon, ArchiveBoxIcon } from './Icons';
+import { useAppContext } from '../context/AppContext.tsx';
+import { Appointment, AppointmentStatus, BillingType } from '../types.ts';
+import { CalendarIcon, UsersIcon, ArchiveBoxIcon } from './Icons.tsx';
 
 interface SummaryCardProps {
   title: string;

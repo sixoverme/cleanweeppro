@@ -1,8 +1,9 @@
+
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useAppContext } from '../context/AppContext';
-import { Appointment, AppointmentStatus, BillingType } from '../types';
-import { ChevronLeftIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, UserCircleIcon } from './Icons';
+import { useAppContext } from '../context/AppContext.tsx';
+import { Appointment, AppointmentStatus, BillingType } from '../types.ts';
+import { ChevronLeftIcon, PhoneIcon, EnvelopeIcon, MapPinIcon, UserCircleIcon } from './Icons.tsx';
 
 const DetailSection: React.FC<{title: string, children: React.ReactNode, noDataText?: string}> = ({ title, children }) => (
     <div className="bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
