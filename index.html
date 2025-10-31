@@ -2,54 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/assets/icon-BST9V46M.svg" type="image/svg+xml" />
-    <link rel="manifest" href="/assets/manifest-D0L-Isxe.json" />
+    <link rel="icon" href="/cleanweeppro/assets/icon-BST9V46M.svg" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1E40AF" />
     <title>CleanSweep Pro</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              'brand-primary': '#1E40AF',
-              'brand-secondary': '#3B82F6',
-              'brand-light': '#DBEAFE',
-              'brand-dark': '#1E3A8A',
-            },
-          },
-        },
-      }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-</head>
-  <body class="bg-slate-50">
-    <div id="root"></div>
   <script type="importmap">
 {
   "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.0",
+    "vite": "https://aistudiocdn.com/vite@^7.1.12",
+    "vite-plugin-pwa": "https://aistudiocdn.com/vite-plugin-pwa@^1.1.0",
+    "jspdf": "https://aistudiocdn.com/jspdf@^3.0.3",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1"
   }
 }
 </script>
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./sw.js').then(registration => {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, err => {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-        });
-      }
-    </script>
+  <script type="module" crossorigin src="/cleanweeppro/assets/index-BUdnY-F-.js"></script>
+  <link rel="stylesheet" crossorigin href="/cleanweeppro/assets/index-DgRcrOzc.css">
+<link rel="manifest" href="/cleanweeppro/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/cleanweeppro/registerSW.js"></script></head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
   </body>
 </html>
