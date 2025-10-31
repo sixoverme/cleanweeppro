@@ -27,6 +27,7 @@
     <script src="https://unpkg.com/recharts/umd/Recharts.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   <script type="importmap">
 {
   "imports": {
@@ -41,7 +42,7 @@
 </head>
   <body class="bg-slate-50">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

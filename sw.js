@@ -20,8 +20,9 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // We only want to handle GET requests
-  if (event.request.method !== 'GET') {
+  // We only want to handle GET requests and http/https requests.
+  // This prevents errors from trying to cache chrome-extension:// requests.
+  if (event.request.method !== 'GET' || !event.request.url.startsWith('http')) {
     return;
   }
   
